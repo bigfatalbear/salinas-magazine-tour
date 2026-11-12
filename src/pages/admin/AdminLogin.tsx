@@ -150,8 +150,7 @@ export function AdminLogin() {
             </form>
 
             <p className="mt-6 text-center text-[11px] leading-relaxed text-[var(--muted)]">
-              Para criar o administrador em produção, cadastre o usuário em Authentication no
-              painel do Supabase.
+              Acesso restrito à equipe editorial. O cadastro de novos usuários está desativado.
             </p>
           </div>
         </div>
