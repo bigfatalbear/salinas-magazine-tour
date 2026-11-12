@@ -1,0 +1,25 @@
+appId: br.com.salinasmagazinetour.app
+productName: Salinas Magazine Tour
+copyright: Copyright © 2026 Salinas Magazine Tour
+directories:
+  output: release
+  buildResources: build
+files:
+  - dist/**/*
+  - electron/**/*
+  - package.json
+asar: true
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: public/icons/icon-512.png
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Salinas Magazine Tour
+  artifactName: Salinas-Magazine-Tour-Setup-${version}.${ext}

@@ -1,0 +1,45 @@
+{
+  "name": "salinas-magazine-tour",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Revista digital e guia turístico de Salinas da Margarida, Bahia.",
+  "author": "Salinas Magazine Tour",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "postbuild": "node scripts/postbuild.mjs",
+    "build:electron": "tsc -b && vite build --base=./",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "seed:sql": "node --experimental-strip-types scripts/generate-seed-sql.mjs",
+    "deploy:pages": "node scripts/deploy-pages.mjs",
+    "electron": "electron .",
+    "dist:win": "npm run build:electron && electron-builder --win nsis"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/playfair-display": "^5.3.0",
+    "@supabase/supabase-js": "^2.119.0",
+    "lucide-react": "^1.72.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "electron": "^45.3.0",
+    "electron-builder": "^26.18.0",
+    "gh-pages": "^6.3.0",
+    "oxlint": "^1.90.0",
+    "tailwindcss": "^4.3.5",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6",
+    "vite-plugin-pwa": "^2.0.0"
+  }
+}
