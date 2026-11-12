@@ -2,6 +2,8 @@
 
 Revista digital, guia turístico e mural de oportunidades de **Salinas da Margarida, Bahia**. O projeto é um PWA instalável, funciona offline depois da primeira visita e inclui um painel editorial com Supabase, assistente de IA e exportação de dados.
 
+- Site: https://bigfatalbear.github.io/salinas-magazine-tour/
+- Repositório: https://github.com/bigfatalbear/salinas-magazine-tour
 - Property ID: `2dfce9de-de4b-57ae-a291-a170c20195cd`
 - Stack: React 19, Vite 8, TypeScript, Tailwind CSS 4, React Router 7, Supabase, vite-plugin-pwa
 - Extras: Electron para Windows, Edge Function de IA, PIX para apoio ao desenvolvedor
