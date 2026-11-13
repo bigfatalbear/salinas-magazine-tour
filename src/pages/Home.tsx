@@ -24,10 +24,11 @@ import { TourismCard } from '../components/TourismCard'
 import { OpportunityCard } from '../components/OpportunityCard'
 import { SectionHeading } from '../components/SectionHeading'
 import { ErrorState } from '../components/EmptyState'
+import { IbgeDashboard } from '../components/IbgeDashboard'
 import { DISTRICTS } from '../data/districts'
 
 const stats = [
-  { value: '15,5 mil', label: 'habitantes (IBGE 2024)' },
+  { value: '15,7 mil', label: 'habitantes (IBGE 2026)' },
   { value: '~10', label: 'praias de mar calmo' },
   { value: '5', label: 'distritos e povoados' },
   { value: '1881', label: 'as primeiras salinas' },
@@ -234,6 +235,8 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      <IbgeDashboard />
 
       <section className="border-y border-[var(--line)] bg-[var(--surface-2)]">
         <div className="container-wide grid items-center gap-8 py-14 md:grid-cols-[0.8fr_1.2fr] md:py-16">

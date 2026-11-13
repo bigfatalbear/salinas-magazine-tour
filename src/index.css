@@ -353,3 +353,38 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+@keyframes chart-grow-y {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes chart-grow-x {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.chart-bar-y {
+  transform-origin: bottom;
+  animation: chart-grow-y 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.chart-bar-x {
+  transform-origin: left;
+  animation: chart-grow-x 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chart-bar-y,
+  .chart-bar-x {
+    animation: none;
+  }
+}
