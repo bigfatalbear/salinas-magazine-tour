@@ -139,7 +139,7 @@ Deno.serve(async (request) => {
     const model =
       settings?.ai_model ||
       Deno.env.get('AI_MODEL') ||
-      (provider === 'openai' ? 'gpt-4o-mini' : 'gemini-2.5-flash')
+      (provider === 'openai' ? 'gpt-4o-mini' : 'gemini-3.5-flash')
 
     const prompt = prompts[action]
     const composed = [text, context ? `Contexto adicional: ${context}` : '']

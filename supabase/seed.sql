@@ -117,6 +117,6 @@ insert into service_opportunities (id, type, title, category, description, conta
 on conflict do nothing;
 
 insert into app_settings (id, storage_path, deploy_target, ai_provider, ai_api_key, ai_model, updated_at) values
-  (1, 'C:\Users\Public\SalinasMagazineTour\data', 'pwa', 'gemini', '', 'gemini-2.5-flash', '2026-11-11T12:00:00.000Z')
+  (1, 'C:\Users\Public\SalinasMagazineTour\data', 'pwa', 'gemini', '', 'gemini-3.5-flash', '2026-11-11T12:00:00.000Z')
 on conflict (id) do update set storage_path = excluded.storage_path, deploy_target = excluded.deploy_target, ai_provider = excluded.ai_provider, ai_model = excluded.ai_model, updated_at = excluded.updated_at;
 

@@ -422,7 +422,7 @@ export const seedSettings: AppSettings = {
   deploy_target: 'pwa',
   ai_provider: 'gemini',
   ai_api_key: '',
-  ai_model: 'gemini-2.5-flash',
+  ai_model: 'gemini-3.5-flash',
   updated_at: '2026-11-11T12:00:00.000Z',
 }
 
