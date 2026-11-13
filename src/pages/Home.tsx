@@ -24,6 +24,7 @@ import { TourismCard } from '../components/TourismCard'
 import { OpportunityCard } from '../components/OpportunityCard'
 import { SectionHeading } from '../components/SectionHeading'
 import { ErrorState } from '../components/EmptyState'
+import { DISTRICTS } from '../data/districts'
 
 const stats = [
   { value: '15,5 mil', label: 'habitantes (IBGE 2024)' },
@@ -281,6 +282,42 @@ export function Home() {
           {data.tourism.slice(0, 3).map((spot) => (
             <TourismCard key={spot.id} spot={spot} />
           ))}
+        </div>
+      </section>
+
+      <section className="border-y border-[var(--line)] bg-[var(--surface-2)]">
+        <div className="container-wide py-16 sm:py-20">
+          <SectionHeading
+            eyebrow="Território"
+            title="Distritos e povoados"
+            description="Da sede à foz do Paraguaçu, cinco lugares com praias, festas e modos de vida próprios."
+            action={{ label: 'Conhecer cada um', to: '/distritos' }}
+          />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            {DISTRICTS.map((district) => (
+              <Link
+                key={district.slug}
+                to="/distritos"
+                className="group card overflow-hidden"
+              >
+                <img
+                  src={imageUrl(district.image_url)}
+                  alt={district.image_alt}
+                  className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                  loading="lazy"
+                />
+                <div className="p-4">
+                  <p className="eyebrow text-[10px]">{district.kind}</p>
+                  <h3 className="display mt-1 text-lg font-bold leading-snug transition group-hover:text-tide">
+                    {district.name}
+                  </h3>
+                  <p className="mt-1 text-xs leading-relaxed text-[var(--muted)]">
+                    {district.tagline}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

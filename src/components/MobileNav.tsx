@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom'
-import { Briefcase, Home, Newspaper, Palmtree, Store } from 'lucide-react'
+import { Briefcase, Home, Map, Newspaper, Palmtree, Store } from 'lucide-react'
 import { cn } from '../lib/utils'
 
 const items = [
   { to: '/', label: 'Início', icon: Home, end: true },
   { to: '/materias', label: 'Matérias', icon: Newspaper },
   { to: '/turismo', label: 'Turismo', icon: Palmtree },
+  { to: '/distritos', label: 'Distritos', icon: Map },
   { to: '/guia', label: 'Guia', icon: Store },
   { to: '/oportunidades', label: 'Vagas', icon: Briefcase },
 ]
@@ -13,10 +14,10 @@ const items = [
 export function MobileNav() {
   return (
     <nav
-      className="mobile-nav fixed inset-x-0 bottom-0 z-40 md:hidden"
+      className="mobile-nav fixed inset-x-0 bottom-0 z-40 lg:hidden"
       aria-label="Navegação rápida"
     >
-      <div className="grid grid-cols-5">
+      <div className="grid grid-cols-6">
         {items.map((item) => {
           const Icon = item.icon
           return (

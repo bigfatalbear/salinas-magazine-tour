@@ -10,6 +10,7 @@ import { Home } from './pages/Home'
 import { Articles } from './pages/Articles'
 import { ArticleDetail } from './pages/ArticleDetail'
 import { Guide } from './pages/Guide'
+import { Districts } from './pages/Districts'
 import { Tourism } from './pages/Tourism'
 import { Opportunities } from './pages/Opportunities'
 import { Backcover } from './pages/Backcover'
@@ -43,6 +44,7 @@ export default function App() {
                 <Route path="materias" element={<Articles />} />
                 <Route path="materias/:id" element={<ArticleDetail />} />
                 <Route path="guia" element={<Guide />} />
+                <Route path="distritos" element={<Districts />} />
                 <Route path="turismo" element={<Tourism />} />
                 <Route path="oportunidades" element={<Opportunities />} />
                 <Route path="contracapa" element={<Backcover />} />

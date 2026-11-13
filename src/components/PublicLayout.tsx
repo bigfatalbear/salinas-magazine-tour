@@ -45,7 +45,7 @@ export function PublicLayout() {
       <ScrollToTop />
       <Header />
       <OfflineBanner />
-      <main className="flex-1 pb-24 md:pb-0">
+      <main className="flex-1 pb-24 lg:pb-0">
         <Outlet />
       </main>
       <Footer />

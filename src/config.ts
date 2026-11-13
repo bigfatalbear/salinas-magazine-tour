@@ -36,6 +36,7 @@ export const NAV_LINKS = [
   { label: 'Capa', to: '/' },
   { label: 'Matérias', to: '/materias' },
   { label: 'Turismo', to: '/turismo' },
+  { label: 'Distritos', to: '/distritos' },
   { label: 'Comércio', to: '/guia' },
   { label: 'Oportunidades', to: '/oportunidades' },
   { label: 'Contracapa', to: '/contracapa' },

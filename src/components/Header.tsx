@@ -11,7 +11,7 @@ export function Header() {
       <div className="container-wide flex h-16 items-center justify-between gap-4">
         <Logo />
 
-        <nav className="hidden items-center gap-1 md:flex" aria-label="Navegação principal">
+        <nav className="hidden items-center gap-1 lg:flex" aria-label="Navegação principal">
           {NAV_LINKS.map((link) => (
             <NavLink
               key={link.to}
